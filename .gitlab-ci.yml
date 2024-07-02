@@ -1,0 +1,50 @@
+stages:
+  - build
+  - package
+  - deploy
+
+
+build:
+    image: mcr.microsoft.com/dotnet/sdk:7.0
+    stage: build
+    only:
+        - dev
+    tags:
+        - devland
+    script:
+        - CI=false dotnet publish -c Release -o out
+    artifacts:
+        expire_in: 1 week
+        paths:
+            - out
+            
+package:
+    environment:
+        name: Development
+    image: docker:20.10.13
+    stage: package
+    only:
+        - dev
+    tags:
+        - devland
+    before_script:
+         - docker info
+         - echo "h@m00d00n@014" | docker login  http://registry.dev.itland-sy.com/ --username itland  --password-stdin
+    script:
+        - docker build --file packaging.Dockerfile -t registry.dev.itland-sy.com/movers_backend:movers_backend .
+        - docker push registry.dev.itland-sy.com/movers_backend:movers_backend
+#Request portianer to redeploy the container
+deploy:
+    image: ibmcom/curl:4.2.0-f4
+    stage: deploy
+    only:
+        - dev
+    script:
+        - curl -X POST https://portainer.dev.itland-sy.com/api/stacks/webhooks/43df11c4-e29b-4164-a21d-56690d562acf
+    tags:
+        - devland
+
+
+
+
+

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Mofleet.Web.Host.props" />
+</Project>

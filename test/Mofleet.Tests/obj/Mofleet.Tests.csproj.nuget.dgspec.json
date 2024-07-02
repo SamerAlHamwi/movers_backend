@@ -1,0 +1,364 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\test\\Mofleet.Tests\\Mofleet.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Application\\Mofleet.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Application\\Mofleet.Application.csproj",
+        "projectName": "Mofleet.Application",
+        "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Application\\Mofleet.Application.csproj",
+        "packagesPath": "C:\\Users\\A.S Technology\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\A.S Technology\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\Mofleet.Core.csproj": {
+                "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\Mofleet.Core.csproj"
+              },
+              "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\Mofleet.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\Mofleet.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "NSwag.Annotations": {
+              "target": "Package",
+              "version": "[14.0.3, )"
+            },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[43.3.0, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[6.14.1, )"
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\Mofleet.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\Mofleet.Core.csproj",
+        "projectName": "Mofleet.Core",
+        "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\Mofleet.Core.csproj",
+        "packagesPath": "C:\\Users\\A.S Technology\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\A.S Technology\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Abp.AutoMapper": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Abp.ZeroCore.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Castle.Windsor.MsDependencyInjection": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "NSwag.Annotations": {
+              "target": "Package",
+              "version": "[14.0.3, )"
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\Mofleet.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\Mofleet.EntityFrameworkCore.csproj",
+        "projectName": "Mofleet.EntityFrameworkCore",
+        "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\Mofleet.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\A.S Technology\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\A.S Technology\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\Mofleet.Core.csproj": {
+                "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Core\\Mofleet.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\test\\Mofleet.Tests\\Mofleet.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\test\\Mofleet.Tests\\Mofleet.Tests.csproj",
+        "projectName": "Mofleet.Tests",
+        "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\test\\Mofleet.Tests\\Mofleet.Tests.csproj",
+        "packagesPath": "C:\\Users\\A.S Technology\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\test\\Mofleet.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\A.S Technology\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Application\\Mofleet.Application.csproj": {
+                "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.Application\\Mofleet.Application.csproj"
+              },
+              "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\Mofleet.EntityFrameworkCore.csproj": {
+                "projectPath": "C:\\Users\\A.S Technology\\source\\repos\\gomovaro-backend\\src\\Mofleet.EntityFrameworkCore\\Mofleet.EntityFrameworkCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Abp.TestBase": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "portable-net45+win8+wp8+wpa81",
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

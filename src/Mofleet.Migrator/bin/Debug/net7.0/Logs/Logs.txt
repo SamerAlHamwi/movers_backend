@@ -1,0 +1,104 @@
+﻿DEBUG 2024-02-08 09:54:45,063 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-02-08 09:54:45,862 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2024-02-08 09:54:45,993 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.Migrator.MofleetMigratorModule, Mofleet.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,994 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.EntityFrameworkCore.MofleetEntityFrameworkModule, Mofleet.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,995 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.MofleetCoreModule, Mofleet.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,995 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,996 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,997 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:45,998 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2024-02-08 09:54:47,121 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Mofleet.EntityFrameworkCore.MofleetDbContext, Mofleet.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:54:47,993 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2024-02-08 09:54:48,035 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-02-08 09:54:48,042 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-02-08 09:54:48,049 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Mofleet
+INFO  2024-02-08 09:54:48,116 [1    ] Mofleet.Migrator.Log                     - Host database: server=45.67.221.108;database=MofleetDbDevelope;user=sa;password=*****;trusted_connection=False;trustservercertificate=True
+INFO  2024-02-08 09:54:48,117 [1    ] Mofleet.Migrator.Log                     - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2024-02-08 09:55:22,579 [1    ] Mofleet.Migrator.Log                     - HOST database migration started...
+INFO  2024-02-08 09:56:13,824 [1    ] Mofleet.Migrator.Log                     - An error occured during migration of host database:
+INFO  2024-02-08 09:56:13,972 [1    ] Mofleet.Migrator.Log                     - Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (53): The network path was not found.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroDbMigrator`1.CreateOrMigrate(AbpTenantBase tenant, Action`1 seedAction)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroDbMigrator`1.CreateOrMigrateForHost(Action`1 seedAction)
+   at Mofleet.Migrator.MultiTenantMigrateExecuter.Run(Boolean skipConnVerification) in C:\Users\A.S Technology\source\repos\gomovaro-backend\src\Mofleet.Migrator\MultiTenantMigrateExecuter.cs:line 62
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+INFO  2024-02-08 09:56:13,972 [1    ] Mofleet.Migrator.Log                     - Canceled migrations.
+DEBUG 2024-02-08 09:57:35,686 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-02-08 09:57:35,771 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2024-02-08 09:57:35,936 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.Migrator.MofleetMigratorModule, Mofleet.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,938 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.EntityFrameworkCore.MofleetEntityFrameworkModule, Mofleet.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,939 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.MofleetCoreModule, Mofleet.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,941 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,941 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,942 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,942 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:35,945 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2024-02-08 09:57:36,404 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Mofleet.EntityFrameworkCore.MofleetDbContext, Mofleet.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-08 09:57:37,310 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2024-02-08 09:57:37,345 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-02-08 09:57:37,352 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-02-08 09:57:37,361 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Mofleet
+INFO  2024-02-08 09:57:37,420 [1    ] Mofleet.Migrator.Log                     - Host database: server=62.171.172.104;database=MofleetDbDevelope;user=sa;password=*****;trustservercertificate=Yes
+INFO  2024-02-08 09:57:37,420 [1    ] Mofleet.Migrator.Log                     - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2024-02-08 09:57:52,972 [1    ] Mofleet.Migrator.Log                     - HOST database migration started...
+INFO  2024-02-08 09:57:58,379 [1    ] Mofleet.Migrator.Log                     - HOST database migration completed.
+INFO  2024-02-08 09:57:58,379 [1    ] Mofleet.Migrator.Log                     - --------------------------------------------------------
+INFO  2024-02-08 09:57:58,770 [1    ] Mofleet.Migrator.Log                     - All databases have been migrated.
+DEBUG 2024-02-08 09:58:29,501 [1    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2024-02-08 09:58:29,502 [1    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2024-02-25 19:17:57,888 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-02-25 19:17:58,452 [1    ] Abp.Modules.AbpModuleManager             - Found 9 ABP modules in total.
+DEBUG 2024-02-25 19:17:58,602 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.Migrator.MofleetMigratorModule, Mofleet.Migrator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,604 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.EntityFrameworkCore.MofleetEntityFrameworkModule, Mofleet.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,604 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Mofleet.MofleetCoreModule, Mofleet.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,605 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,605 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,605 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,605 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,606 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,606 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=8.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:17:58,608 [1    ] Abp.Modules.AbpModuleManager             - 9 modules loaded.
+DEBUG 2024-02-25 19:17:59,613 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Mofleet.EntityFrameworkCore.MofleetDbContext, Mofleet.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-02-25 19:18:00,528 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2024-02-25 19:18:00,574 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-02-25 19:18:00,585 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-02-25 19:18:00,591 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Mofleet
+INFO  2024-02-25 19:18:00,678 [1    ] Mofleet.Migrator.Log                     - Host database: server=45.67.221.108;database=MofleetDbDevelope;user=sa;password=*****;trusted_connection=False;trustservercertificate=True
+INFO  2024-02-25 19:18:00,680 [1    ] Mofleet.Migrator.Log                     - Continue to migration for this host database and all tenants..? (Y/N): 
+INFO  2024-02-25 19:18:04,063 [1    ] Mofleet.Migrator.Log                     - HOST database migration started...

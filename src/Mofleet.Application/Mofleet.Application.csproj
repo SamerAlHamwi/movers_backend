@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>net7.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Mofleet.Application</AssemblyName>
+    <PackageId>Mofleet.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Mofleet</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NSwag.Annotations" Version="14.0.3" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.0.1" />
+    <PackageReference Include="Stripe.net" Version="43.3.0" />
+    <PackageReference Include="Twilio" Version="6.14.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mofleet.Core\Mofleet.Core.csproj" />
+    <ProjectReference Include="..\Mofleet.EntityFrameworkCore\Mofleet.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

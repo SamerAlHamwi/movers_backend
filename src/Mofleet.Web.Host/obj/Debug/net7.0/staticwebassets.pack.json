@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\gomovaro-backend\\gomovaro-backend\\src\\Mofleet.Web.Host\\wwwroot\\Uploads\\Attachments\\defaultUser.png",
+      "PackagePath": "staticwebassets\\Uploads\\Attachments\\defaultUser.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\gomovaro-backend\\gomovaro-backend\\src\\Mofleet.Web.Host\\wwwroot\\Uploads\\Images\\defaultUser.png",
+      "PackagePath": "staticwebassets\\Uploads\\Images\\defaultUser.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\gomovaro-backend\\gomovaro-backend\\src\\Mofleet.Web.Host\\wwwroot\\Uploads\\LowResolutionPhotos\\defaultUser.png",
+      "PackagePath": "staticwebassets\\Uploads\\LowResolutionPhotos\\defaultUser.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\gomovaro-backend\\gomovaro-backend\\src\\Mofleet.Web.Host\\wwwroot\\swagger\\ui\\abp.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\abp.js"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\Desktop\\gomovaro-backend\\gomovaro-backend\\src\\Mofleet.Web.Host\\wwwroot\\swagger\\ui\\abp.swagger.js",
+      "PackagePath": "staticwebassets\\swagger\\ui\\abp.swagger.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Mofleet.Web.Host.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Mofleet.Web.Host.props",
+      "PackagePath": "build\\Mofleet.Web.Host.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Mofleet.Web.Host.props",
+      "PackagePath": "buildMultiTargeting\\Mofleet.Web.Host.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Mofleet.Web.Host.props",
+      "PackagePath": "buildTransitive\\Mofleet.Web.Host.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

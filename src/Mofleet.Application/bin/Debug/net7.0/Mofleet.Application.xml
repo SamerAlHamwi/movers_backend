@@ -1,0 +1,1699 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mofleet.Application</name>
+    </assembly>
+    <members>
+        <member name="M:ClinicSystem.Advertisiments.AdvertisimentAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            GetAsync
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Drivers.DriverAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get Driver Details ById
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Drivers.DriverAppService.GetAllAsync(Mofleet.Domain.Drivers.Dto.PagedDriverResultRequestDto)">
+            <summary>
+            Get All Drivers Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Drivers.DriverAppService.CreateAsync(Mofleet.Domain.Drivers.Dto.CreateDriverDto)">
+            <summary>
+            Add New Driver Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Drivers.DriverAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete Driver Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Drivers.DriverAppService.CreateFilteredQuery(Mofleet.Domain.Drivers.Dto.PagedDriverResultRequestDto)">
+            <summary>
+            Filter For A Group Of Drivers
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Drivers.DriverAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Drivers.Driver},Mofleet.Domain.Drivers.Dto.PagedDriverResultRequestDto)">
+            <summary>
+            Sorting Filtered Drivers
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Guid})">
+            <summary>
+            Get Offer Details ById
+            </summary>
+            /// <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.GetAllAsync(Mofleet.Domain.Offers.Dto.PagedOfferResultRequestDto)">
+            <summary>
+            Get All Offers Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.CreateAsync(Mofleet.Domain.Offers.Dto.CreateOfferDto)">
+            <summary>
+            
+            Add New Offer Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.UpdateAsync(Mofleet.Domain.Offers.Dto.UpdateOfferDto)">
+            <summary>
+            Update Offer Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.CreateFilteredQuery(Mofleet.Domain.Offers.Dto.PagedOfferResultRequestDto)">
+            <summary>
+            Filter For A Group Of Offers
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Offers.Offer},Mofleet.Domain.Offers.Dto.PagedOfferResultRequestDto)">
+            <summary>
+            /
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.ApproveOfferToSendItToUser(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Approve Offer From Admin
+            </summary>
+            <param name="offerIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.TakeOfferFromUserAsync(System.Guid,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="offerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Offers.OfferAppService.RejectOffersByUser(Mofleet.Domain.Offers.Dto.RejectOffersInputDto)">
+            <summary>
+            Reject Offers
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.#ctor(Abp.Domain.Repositories.IRepository{Mofleet.Domain.Regions.Region},Mofleet.Domain.Regions.RegionManager,Mofleet.Domain.Countries.ICountryManager,Abp.Domain.Repositories.IRepository{Mofleet.Domain.Regions.RegionTranslation},Abp.Domain.Repositories.IRepository{Mofleet.Domain.Regions.Region})">
+            <summary>
+            Region AppService
+            </summary>
+            <param name="repository"></param>
+            <param name="regionManager"></param>
+            <param name="countryManager"></param>
+            <param name="regionTranslationRepository"></param>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get Region Details ById
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.GetAllAsync(Mofleet.Domain.Regions.Dto.PagedRegionResultRequestDto)">
+            <summary>
+            Get All Regions Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.CreateAsync(Mofleet.Domain.Regions.Dto.CreateRegionDto)">
+            <summary>
+            Add New Region Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.UpdateAsync(Mofleet.Domain.Regions.Dto.UpdateRegionDto)">
+            <summary>
+            Update Region Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete Region Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.CreateFilteredQuery(Mofleet.Domain.Regions.Dto.PagedRegionResultRequestDto)">
+            <summary>
+            Filter For A Group Of Regions
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Regions.Region},Mofleet.Domain.Regions.Dto.PagedRegionResultRequestDto)">
+            <summary>
+            Sorting Filtered Regions
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Regions.RegionAppService.SwitchActivationAsync(Mofleet.Domain.Cities.Dto.SwitchActivationInputDto)">
+            <summary>
+            Switch Activation Of A Region
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Trucks.TruckAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get Truck Details ById
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Trucks.TruckAppService.GetAllAsync(Mofleet.Domain.Trucks.Dto.PagedTruckResultRequestDto)">
+            <summary>
+            Get All Trucks Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Trucks.TruckAppService.CreateAsync(Mofleet.Domain.Trucks.Dto.CreateTruckDto)">
+            <summary>
+            Add New Truck Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Trucks.TruckAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete Truck Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Trucks.TruckAppService.CreateFilteredQuery(Mofleet.Domain.Trucks.Dto.PagedTruckResultRequestDto)">
+            <summary>
+            Filter For A Group Of Trucks
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClinicSystem.Trucks.TruckAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Trucks.Truck},Mofleet.Domain.Trucks.Dto.PagedTruckResultRequestDto)">
+            <summary>
+            Sorting Filtered Trucks
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.Advertisiments.Mapper.AdvertisimentMapProfile">
+            <summary>
+            PostsMapProfile
+            </summary>
+        </member>
+        <member name="M:Mofleet.Advertisiments.Mapper.AdvertisimentMapProfile.#ctor">
+            <summary>
+             Posts Map Profile 
+            </summary>
+        </member>
+        <member name="F:Mofleet.AppConsts.DefaultPassPhrase">
+            <summary>
+            Default pass phrase for SimpleStringCipher decrypt/encrypt operations
+            </summary>
+        </member>
+        <member name="F:Mofleet.AppConsts.UploadsFolderName">
+            <summary>
+            UploadsFolderName
+            </summary>
+        </member>
+        <member name="F:Mofleet.AppConsts.AttachmentsFolderName">
+            <summary>
+            AttachmentsFolderName
+            </summary>
+        </member>
+        <member name="F:Mofleet.AppConsts.RecordsFolderName">
+            <summary>
+            Records Folder Name
+            </summary>
+        </member>
+        <member name="F:Mofleet.AppConsts.ImagesFolderName">
+            <summary>
+            ImagesFolderName
+            </summary>
+        </member>
+        <member name="T:Mofleet.Attachments.AttachmentAppService">
+            <summary>
+            AttachmentAppService
+            </summary>
+        </member>
+        <member name="M:Mofleet.Attachments.AttachmentAppService.#ctor(Abp.Domain.Repositories.IRepository{Mofleet.Domain.Attachments.Attachment,System.Int64},Mofleet.Domain.Attachments.IAttachmentManager,Mofleet.FileUploadService.IFileUploadService,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            AttachmentAppService
+            </summary>
+            <param name="repository"></param>
+            <param name="attachmentManager"></param>
+            <param name="fileUploadService"></param>
+        </member>
+        <member name="M:Mofleet.Attachments.AttachmentAppService.GetAllAsync(Mofleet.Attachments.Dto.PagedAttachmentResultRequestDto)">
+            <summary>
+            GetAllAsync
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Attachments.AttachmentAppService.GetAsync(Abp.Application.Services.Dto.EntityDto)">
+            <summary>
+            Get Attachment
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Attachments.AttachmentAppService.UploadAsync(Mofleet.Attachments.Dto.UploadAttachmentInputDto)">
+            <summary>
+            Profile = 1,
+            RequestForQuotation=2,
+            Advertisiment=3, 
+            QR = 4
+            SourceTypeIcon=5,
+            </summary>     
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Attachments.AttachmentAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto)">
+            <summary>
+            Delete
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Attachments.AttachmentAppService.UploadMultiAttachmentAsync(Mofleet.Attachments.Dto.UploadMultiAttachmentInputDto)">
+            <summary>
+            Upload Multi Attachments
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.Attachments.IAttachmentAppService">
+            <summary>
+            IAttachmentAppService
+            </summary>
+        </member>
+        <member name="M:Mofleet.Attachments.IAttachmentAppService.GetAllAsync(Mofleet.Attachments.Dto.PagedAttachmentResultRequestDto)">
+            <summary>
+            Get All Attachments
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Attachments.IAttachmentAppService.GetAsync(Abp.Application.Services.Dto.EntityDto)">
+            <summary>
+            Get Attachment
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Attachments.IAttachmentAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto)">
+            <summary>
+            Delete Attachment
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Attachments.IAttachmentAppService.UploadAsync(Mofleet.Attachments.Dto.UploadAttachmentInputDto)">
+            <summary>
+            Upload Attachment
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.AttributeChoices.AttributeChoiceAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.#ctor(Abp.Domain.Repositories.IRepository{Mofleet.Domain.AttributeChoices.AttributeChoice},Mofleet.Domain.RequestForQuotations.IRequestForQuotationManager,Mofleet.Domain.AttributeChoices.IAttributeChoiceManger,Abp.Domain.Repositories.IRepository{Mofleet.Domain.AttributeChoices.AttributeChoiceTranslation},Mofleet.Domain.SourceTypes.ISourceTypeManager)">
+            <summary>
+            Attribute Choice AppService
+            </summary>
+            <param name="repository"></param>
+            <param name="attributeChoiceManager"></param>
+            <param name="attributeChoiceTranslationRepository"></param>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get Attribute Choice Details ById
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.GetAllAsync(Mofleet.Domain.AttributeChoices.Dto.PagedAttributeChoiceResultRequestDto)">
+            <summary>
+            Get All AttributeChoice Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.CreateAsync(Mofleet.Domain.AttributeChoices.Dto.CreateAttributeChoiceDto)">
+            <summary>
+            Add New Attribute Choice Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.UpdateAsync(Mofleet.Domain.AttributeChoices.Dto.UpdateAttributeChoiceDto)">
+            <summary>
+            Update Attribute Choice Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete Attribute Choice Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.CreateFilteredQuery(Mofleet.Domain.AttributeChoices.Dto.PagedAttributeChoiceResultRequestDto)">
+            <summary>
+            Filter For A Group Of Attribute Choice
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.AttributeChoices.AttributeChoice},Mofleet.Domain.AttributeChoices.Dto.PagedAttributeChoiceResultRequestDto)">
+            <summary>
+            Sorting Filtered Attribute Choice
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributeChoices.AttributeChoiceAppService.SwitchActivationAsync(Mofleet.Domain.AttributeChoices.Dto.AttributeChoiceSwitchActivationDto)">
+            <summary>
+            Switch Activation Of An Attribute Choice
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.AttributeForSourceTypeAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.AttributeForSourceTypeAppService.GetAllAsync(Mofleet.Domain.AttributesForSourceType.Dto.PagedAttributeForSourceTypeResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.AttributeForSourceTypeAppService.UpdateAsync(Mofleet.Domain.AttributesForSourceType.Dto.UpdateAttributeForSourceTypeDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.AttributeForSourceTypeAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete Attribute For Source Type Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.AttributeForSourceTypeAppService.CreateFilteredQuery(Mofleet.Domain.AttributesForSourceType.Dto.PagedAttributeForSourceTypeResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.AttributeForSourceTypeAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.AttributesForSourceType.AttributeForSourceType},Mofleet.Domain.AttributesForSourceType.Dto.PagedAttributeForSourceTypeResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ServiceAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ServiceAppService.GetAllAsync(Mofleet.Domain.services.Dto.PagedServiceResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ServiceAppService.UpdateAsync(Mofleet.Domain.services.Dto.UpdateServiceDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ServiceAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ServiceAppService.CreateFilteredQuery(Mofleet.Domain.services.Dto.PagedServiceResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ServiceAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.services.Service},Mofleet.Domain.services.Dto.PagedServiceResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.SubServiceAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.SubServiceAppService.GetAllAsync(Mofleet.Domain.SubServices.Dto.PagedSubServiceResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.SubServiceAppService.UpdateAsync(Mofleet.Domain.SubServices.Dto.UpdateSubServiceDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.SubServiceAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.SubServiceAppService.CreateFilteredQuery(Mofleet.Domain.SubServices.Dto.PagedSubServiceResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.SubServiceAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.SubServices.SubService},Mofleet.Domain.SubServices.Dto.PagedSubServiceResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ToolAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ToolAppService.GetAllAsync(Mofleet.Domain.Toolss.Dto.PagedToolResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ToolAppService.UpdateAsync(Mofleet.Domain.Toolss.Dto.UpdateToolDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ToolAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ToolAppService.CreateFilteredQuery(Mofleet.Domain.Toolss.Dto.PagedToolResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ToolAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Toolss.Tool},Mofleet.Domain.Toolss.Dto.PagedToolResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.AttributesForSourceType.ToolAppService.SwitchActivationAsync(Mofleet.Domain.Cities.Dto.SwitchActivationInputDto)">
+            <summary>
+            Switch Activation of A Tool
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.Register(Mofleet.Authorization.Accounts.Dto.RegisterInput)">
+            <summary>
+            Register user
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.SignUpWithPhoneNumberAsync(Mofleet.Authorization.Accounts.Dto.SignInWithPhoneNumberInputDto)">
+            <summary>
+            (mobile)Signup with phone number 
+            this End point just for register new client in system
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.SignInWithPhoneNumberAsync(Mofleet.Authorization.Accounts.Dto.SignInWithPhoneNumberInputDto)">
+             <summary>
+            (mobile) Signin with phone number
+            this endpoint for login  a registerd client in system this end point return a verification code temporarily
+            it will be send via sms later
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.ResendVerificationCodeAsync(Mofleet.Authorization.Accounts.Dto.VerifiyPhoneNumberInputDto)">
+            <summary>
+            Resend verification code
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.VerifySignUpWithPhoneNumberAsync(Mofleet.Authorization.Accounts.Dto.VerifySignUpWithPhoneNumberInputDto)">
+            <summary>
+            Verify SignUp With PhoneNumber
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.ChangePhoneNumber(Mofleet.Authorization.Accounts.Dto.ChangePhoneNumberDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.SendVerificationCodeToEmailAsync(Mofleet.Authorization.Accounts.Dto.RequestCodeToEmailInput)">
+            <summary>
+            Call This To Send Verification Code To Email For Confirm Email Or ForgetPassword
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Authorization.Accounts.AccountAppService.VerifyUserEmailAccount(Mofleet.Authorization.Accounts.Dto.ConfirmEmailWithCodeInputDto)">
+            <summary>
+            Verify Email Account
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="T:Mofleet.Cities.CityAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.#ctor(Abp.Domain.Repositories.IRepository{Mofleet.Domain.Cities.City},Mofleet.Domain.Cities.CityManager,Mofleet.Domain.Countries.CountryManager,Abp.Domain.Repositories.IRepository{Mofleet.Countries.Country},Abp.Domain.Repositories.IRepository{Mofleet.Domain.Cities.CityTranslation},Abp.Domain.Repositories.IRepository{Mofleet.Domain.Cities.City})">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+            <param name="cityManager"></param>
+            <param name="countryManager"></param>
+            <param name="countryRepository"></param>
+            <param name="cityTranslationRepository"></param>
+            <param name="cityRepository"></param>
+            <param name="attachmentManager"></param>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get City ByID
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.GetAllAsync(Mofleet.Cities.Dto.PagedCityResultRequestDto)">
+            <summary>
+            Get All City
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.UpdateAsync(Mofleet.Cities.Dto.UpdateCityDto)">
+            <summary>
+            Update City Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete A City 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.CreateFilteredQuery(Mofleet.Cities.Dto.PagedCityResultRequestDto)">
+            <summary>
+            Filter for  A Group of City
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Cities.City},Mofleet.Cities.Dto.PagedCityResultRequestDto)">
+            <summary>
+            Sort Filtered Cities
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Cities.CityAppService.SwitchActivationAsync(Mofleet.Domain.Cities.Dto.SwitchActivationInputDto)">
+            <summary>
+            Switch Activation of A City
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.Cities.CompanyAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mofleet.CompanyBranches.CompanyBranchAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.Configuration.ConfigurationAppService.SetEmailSetting(Mofleet.Configuration.Dto.EmailSettingDto)">
+            <summary>
+            kkkk
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:Mofleet.Configuration.ConfigurationAppService.SetFileSizeSetting(Mofleet.Configuration.Dto.FileSizeSettingDto)">
+            <summary>
+            Set Allowed Uploaded File Size in MegaByte 
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="P:Mofleet.Configuration.Dto.EmailSettingDto.Message">
+            <summary>
+            Normal Message For Verify Account
+            </summary>
+        </member>
+        <member name="P:Mofleet.Configuration.Dto.EmailSettingDto.MessageForResetPassword">
+            <summary>
+            Message For Reset Account 
+            </summary>
+        </member>
+        <member name="P:Mofleet.Configuration.Dto.SmsSettingDto.SmsUserName">
+            <summary>
+            accountSid
+            </summary>
+        </member>
+        <member name="P:Mofleet.Configuration.Dto.SmsSettingDto.SmsPassword">
+            <summary>
+            authToken
+            </summary>
+        </member>
+        <member name="P:Mofleet.Configuration.Dto.SmsSettingDto.ServiceAccountSID">
+            <summary>
+            Phone Number Sender
+            </summary>
+        </member>
+        <member name="T:Mofleet.ContactUsService.ContactUsAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.#ctor(Abp.Domain.Repositories.IRepository{Mofleet.Domain.ContactUses.ContactUs},Mofleet.Domain.ContactUses.IContactUsManager,AutoMapper.IMapper,Mofleet.Domain.Attachments.IAttachmentManager)">
+            <summary>
+            Countries AppService
+            </summary>
+            <param name="repository"></param>
+            <param name="ContactUsManager"></param>
+            <param name="cityManager"></param>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get ContactUs Details ById
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.GetAllAsync(Mofleet.ContactUsService.Dto.PagedContactUsResultRequestDto)">
+            <summary>
+            Get All Countries Details 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.CreateAsync(Mofleet.ContactUsService.Dto.CreateContactUsDto)">
+            <summary>
+            Add New ContactUs  Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.UpdateAsync(Mofleet.ContactUsService.Dto.UpdateContactUsDto)">
+            <summary>
+            Update ContactUs Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete ContactUs Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.CreateFilteredQuery(Mofleet.ContactUsService.Dto.PagedContactUsResultRequestDto)">
+            <summary>
+            Filter For A Group of Countries
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.ContactUsService.ContactUsAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.ContactUses.ContactUs},Mofleet.ContactUsService.Dto.PagedContactUsResultRequestDto)">
+            <summary>
+            Sorting Filtered Countries
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.Countries.CountryAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.#ctor(Abp.Domain.Repositories.IRepository{Mofleet.Countries.Country},Mofleet.Domain.Countries.ICountryManager,Abp.Domain.Repositories.IRepository{Mofleet.Domain.Countries.CountryTranslation},Abp.Domain.Repositories.IRepository{Mofleet.Countries.Country})">
+            <summary>
+            Countries AppService
+            </summary>
+            <param name="repository"></param>
+            <param name="countryManager"></param>
+            <param name="countryTranslationRepository"></param>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get Country Details ById
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.GetAllAsync(Mofleet.Countries.Dto.PagedCountryResultRequestDto)">
+            <summary>
+            Get All Countries Details 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.CreateAsync(Mofleet.Countries.Dto.CreateCountryDto)">
+            <summary>
+            Add New Country  Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.UpdateAsync(Mofleet.Countries.Dto.UpdateCountryDto)">
+            <summary>
+            Update Country Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete Country Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.CreateFilteredQuery(Mofleet.Countries.Dto.PagedCountryResultRequestDto)">
+            <summary>
+            Filter For A Group of Countries
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Countries.Country},Mofleet.Countries.Dto.PagedCountryResultRequestDto)">
+            <summary>
+            Sorting Filtered Countries
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Countries.CountryAppService.SwitchActivationAsync(Mofleet.Domain.Cities.Dto.SwitchActivationInputDto)">
+            <summary>
+            Switch Activation For A Country
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.ApplySorting(System.Linq.IQueryable{`0},`4)">
+            <summary>
+            Should apply sorting if needed.
+            </summary>
+            <param name="query">The query.</param>
+            <param name="input">The input.</param>
+        </member>
+        <member name="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.ApplyPaging(System.Linq.IQueryable{`0},`4)">
+            <summary>
+            Should apply paging if needed.
+            </summary>
+            <param name="query">The query.</param>
+            <param name="input">The input.</param>
+        </member>
+        <member name="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.CreateFilteredQuery(`4)">
+            <summary>
+            This method should create <see cref="T:System.Linq.IQueryable`1"/> based on given input.
+            It should filter query if needed, but should not do sorting or paging.
+            Sorting should be done in <see cref="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.ApplySorting(System.Linq.IQueryable{`0},`4)"/> and paging should be done in <see cref="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.ApplyPaging(System.Linq.IQueryable{`0},`4)"/>
+            methods.                     
+            </summary>
+            <param name="input">The input.</param>
+        </member>
+        <member name="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.MapToEntityDto(`0)">
+            <summary>
+            Maps <typeparamref name="TEntity"/> to <typeparamref name="TEntityDto"/>.
+            It uses <see cref="!:IObjectMapper"/> by default.
+            It can be overriden for custom mapping.
+            </summary>
+        </member>
+        <member name="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.MapToLiteEntityDto(`0)">
+            <summary>
+            Maps <typeparamref name="TEntity"/> to <typeparamref name="TLiteEntityDto"/>.
+            It uses <see cref="!:IObjectMapper"/> by default.
+            It can be overriden for custom mapping.
+            </summary>
+        </member>
+        <member name="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.MapToEntity(`5)">
+            <summary>
+            Maps <typeparamref name="TEntityDto"/> to <typeparamref name="TEntity"/> to create a new entity.
+            It uses <see cref="!:IObjectMapper"/> by default.
+            It can be overriden for custom mapping.
+            </summary>
+        </member>
+        <member name="M:Mofleet.CrudAppServiceBase.MofleetCrudAppServiceBase`7.MapToEntity(`6,`0)">
+            <summary>
+            Maps <typeparamref name="TUpdateInput"/> to <typeparamref name="TEntity"/> to update the entity.
+            It uses <see cref="!:IObjectMapper"/> by default.
+            It can be overriden for custom mapping.
+            </summary>
+        </member>
+        <member name="T:Mofleet.FileUploadService.FileUploadService">
+            <summary>
+            File Upload Service
+            </summary>
+        </member>
+        <member name="P:Mofleet.FileUploadService.FileUploadService.Logger">
+            <summary>
+            Logger
+            </summary>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.#ctor(Abp.Localization.ILocalizationManager,Abp.Configuration.ISettingManager,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             File Upload Service
+            </summary>
+            <param name="localizationManager"></param>
+            <param name="settingManager"></param>
+            <param name="webHostEnvironment"></param>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.SaveAttachmentAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Save Attachment Async
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.SaveImageAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Save Image Async
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.GeneratePathToSave(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="patientInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.DeleteAttachment(System.String)">
+            <summary>
+            Delete Attachment
+            </summary>
+            <param name="fileRelativePath"></param>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.CheckFileSizeAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Check File Size Async
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.GetAndCheckFileType(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Get And Check File Type
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.FileUploadService.GetImageRelativePath(System.String)">
+            <summary>
+            Get Image Relative Path
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.IFileUploadService.SaveAttachmentAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Save file to Attachments folder (wwwroot\Attachments\).
+            </summary>
+            <param name="file">uploaded file</param>
+            <returns>AttachmentType and Path of saved file relative to wwwroot folder</returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.IFileUploadService.SaveImageAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Save file to Images folder (wwwroot\Images\).
+            </summary>
+            <param name="file">uploaded file</param>
+            <returns>Image Type and Path of saved file relative to wwwroot folder</returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.IFileUploadService.DeleteAttachment(System.String)">
+            <summary>
+            Delete Attachment
+            </summary>
+            <param name="fileRelativePath"></param>
+        </member>
+        <member name="M:Mofleet.FileUploadService.IFileUploadService.CheckFileSizeAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Check File Size Async
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.IFileUploadService.GetAndCheckFileType(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+             Get And Check File Type
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.FileUploadService.IFileUploadService.GeneratePathToSave(System.String,System.String)">
+            <summary>
+            Generate Path To Save
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.FileUploadService.UploadedFileInfo">
+            <summary>
+            Uploaded File Info
+            </summary>
+        </member>
+        <member name="P:Mofleet.FileUploadService.UploadedFileInfo.Type">
+            <summary>
+            AttachmentType
+            </summary>
+        </member>
+        <member name="P:Mofleet.FileUploadService.UploadedFileInfo.RelativePath">
+            <summary>
+            RelativePath
+            </summary>
+        </member>
+        <member name="T:Mofleet.FileUploadService.UploadedImageInfo">
+            <summary>
+            Uploaded Image Info
+            </summary>
+        </member>
+        <member name="P:Mofleet.FileUploadService.UploadedImageInfo.Type">
+            <summary>
+            ImageType
+            </summary>
+        </member>
+        <member name="P:Mofleet.FileUploadService.UploadedImageInfo.RelativePath">
+            <summary>
+            RelativePath
+            </summary>
+        </member>
+        <member name="P:Mofleet.FileUploadService.UploadedImageInfo.PathToSave">
+            <summary>
+            PathToSave
+            </summary>
+        </member>
+        <member name="M:Mofleet.FrequentlyQuestionService.FrequentlyQuestionAppService.MigrateDatabaseAsync">
+            <summary>
+            Call this EndPoint Only When To UpdateDatabase
+            </summary>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="T:Mofleet.Mediators.MediatorAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.Mediators.MediatorAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Mediators.Mediator},Mofleet.Mediators.Dto.PagedMediatiorResultRequestDto)">
+            <summary>
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.MofleetAppServiceBase">
+            <summary>
+            Derive your application services from this class.
+            </summary>
+        </member>
+        <member name="T:Mofleet.Net.MimeTypes.MimeTypeNames">
+            <summary>
+            Common mime types. 
+            </summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXJavascript">
+            <summary>Used to denote the encoding necessary for files containing JavaScript source code. The alternative MIME type for this file type is text/javascript.</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioL24">
+            <summary>24bit Linear PCM audio at 8-48kHz, 1-N channels; Defined in RFC 3190</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXShockwaveFlash">
+            <summary>Adobe Flash files for example with the extension .swf</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationOctetStream">
+            <summary>Arbitrary binary data.[5] Generally speaking this type identifies files that are not associated with a specific application. Contrary to past assumptions by software packages such as Apache this is not a type that should be applied to unknown files. In such a case, a server or application should not indicate a content type, as it may be incorrect, but rather, should omit the type in order to allow the recipient to guess the type.[6]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationAtomXml">
+            <summary>Atom feeds</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextCss">
+            <summary>Cascading Style Sheets; Defined in RFC 2318</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextCmd">
+            <summary>commands; subtype resident in Gecko browsers like Firefox 3.5</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextCsv">
+            <summary>Comma-separated values; Defined in RFC 4180</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXDeb">
+            <summary>deb (file format), a software package format used by the Debian project</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MultipartEncrypted">
+            <summary>Defined in RFC 1847</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MultipartSigned">
+            <summary>Defined in RFC 1847</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MessageHttp">
+            <summary>Defined in RFC 2616</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ModelExample">
+            <summary>Defined in RFC 4735</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXDvi">
+            <summary>device-independent document in DVI format</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXmlDtd">
+            <summary>DTD files; Defined by RFC 3023</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationJavascript" -->
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationEcmascript">
+            <summary>ECMAScript/JavaScript; Defined in RFC 4329 (equivalent to application/javascript but with stricter processing rules)</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationEdifact">
+            <summary>EDI EDIFACT data; Defined in RFC 1767</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationEdiX12">
+            <summary>EDI X12 data; Defined in RFC 1767</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MessagePartial">
+            <summary>Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MessageRfc822">
+            <summary>Email; EML files, MIME files, MHT files, MHTML files; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextXml">
+            <summary>Extensible Markup Language; Defined in RFC 3023</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoXFlv">
+            <summary>Flash video (FLV files)</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ImageGif">
+            <summary>GIF image; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextXGwtRpc">
+            <summary>GoogleWebToolkit data</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXGzip">
+            <summary>Gzip</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextHtml">
+            <summary>HTML; Defined in RFC 2854</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ImageVndMicrosoftIcon">
+            <summary>ICO image; Registered[9]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ModelIges">
+            <summary>IGS files, IGES files; Defined in RFC 2077</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MessageImdnXml">
+            <summary>IMDN Instant Message Disposition Notification; Defined in RFC 5438</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationJson">
+            <summary>JavaScript Object Notation JSON; Defined in RFC 4627</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationJsonPatch">
+            <summary>JavaScript Object Notation (JSON) Patch; Defined in RFC 6902</summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "F:Mofleet.Net.MimeTypes.MimeTypeNames.TextJavascript" -->
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ImagePjpeg">
+            <summary>JPEG JFIF image; Associated with Internet Explorer; Listed in ms775147(v=vs.85) - Progressive JPEG, initiated before global browser support for progressive JPEGs (Microsoft and Firefox).</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ImageJpeg">
+            <summary>JPEG JFIF image; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextXJqueryTmpl">
+            <summary>jQuery template data</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndGoogleEarthKmlXml">
+            <summary>KML files (e.g. for Google Earth)</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXLatex">
+            <summary>LaTeX files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoXMatroska">
+            <summary>Matroska open media format</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndOpenxmlformatsOfficedocumentSpreadsheetmlSheet">
+            <summary>Microsoft Excel 2007 files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndMsExcel">
+            <summary>Microsoft Excel files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndOpenxmlformatsOfficedocumentPresentationmlPresentation">
+            <summary>Microsoft Powerpoint 2007 files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndMsPowerpoint">
+            <summary>Microsoft Powerpoint files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndOpenxmlformatsOfficedocumentWordprocessingmlDocument">
+            <summary>Microsoft Word 2007 files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationMsword">
+            <summary>Microsoft Word files[15]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MultipartAlternative">
+            <summary>MIME Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MultipartMixed">
+            <summary>MIME Email; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MultipartRelated">
+            <summary>MIME Email; Defined in RFC 2387 and used by MHTML (HTML mail)</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.MultipartFormData">
+            <summary>MIME Webform; Defined in RFC 2388</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndMozillaXulXml">
+            <summary>Mozilla XUL files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioMpeg">
+            <summary>MP3 or other MPEG audio; Defined in RFC 3003</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioMp4">
+            <summary>MP4 audio</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoMp4">
+            <summary>MP4 video; Defined in RFC 4337</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoMpeg">
+            <summary>MPEG-1 video with multiplexed audio; Defined in RFC 2045 and RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ModelMesh">
+            <summary>MSH files, MESH files; Defined in RFC 2077, SILO files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioBasic">
+            <summary>mulaw audio at 8 kHz, 1 channel; Defined in RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoOgg">
+            <summary>Ogg Theora or other video (with audio); Defined in RFC 5334</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioOgg">
+            <summary>Ogg Vorbis, Speex, Flac and other audio; Defined in RFC 5334</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationOgg">
+            <summary>Ogg, a multimedia bitstream container format; Defined in RFC 5334</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXopXml">
+            <summary>OP</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentGraphics">
+            <summary>OpenDocument Graphics; Registered[14]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentPresentation">
+            <summary>OpenDocument Presentation; Registered[13]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentSpreadsheet">
+            <summary>OpenDocument Spreadsheet; Registered[12]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationVndOasisOpendocumentText">
+            <summary>OpenDocument Text; Registered[11]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs12">
+            <summary>p12 files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Certificates">
+            <summary>p7b and spc files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Mime">
+            <summary>p7c files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Certreqresp">
+            <summary>p7r files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXPkcs7Signature">
+            <summary>p7s files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationPdf">
+            <summary>Portable Document Format, PDF has been in use for document exchange on the Internet since 1993; Defined in RFC 3778</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ImagePng">
+            <summary>Portable Network Graphics; Registered,[8] Defined in RFC 2083</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationPostscript">
+            <summary>PostScript; Defined in RFC 2046</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoQuicktime">
+            <summary>QuickTime video; Registered[10]</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXRarCompressed">
+            <summary>RAR archive files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioVndRnRealaudio">
+            <summary>RealAudio; Documented in RealPlayer Customer Support Answer 2559</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationRdfXml">
+            <summary>Resource Description Framework; Defined by RFC 3870</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationRssXml">
+            <summary>RSS feeds</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationSoapXml">
+            <summary>SOAP; Defined by RFC 3902</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXStuffit">
+            <summary>StuffIt archive files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ImageSvgXml">
+            <summary>SVG vector image; Defined in SVG Tiny 1.2 Specification Appendix M</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ImageTiff">
+            <summary>Tag Image File Format (only for Baseline TIFF); Defined in RFC 3302</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXTar">
+            <summary>Tarball files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextPlain">
+            <summary>Textual data; Defined in RFC 2046 and RFC 3676</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXFontTtf">
+            <summary>TrueType Font No registered MIME type, but this is the most commonly used</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.TextVcard">
+            <summary>vCard (contact information); Defined in RFC 6350</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioVorbis">
+            <summary>Vorbis encoded audio; Defined in RFC 5215</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioVndWave">
+            <summary>WAV audio; Defined in RFC 2361</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationFontWoff">
+            <summary>Web Open Font Format; (candidate recommendation; use application/x-font-woff until standard is official)</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoWebm">
+            <summary>WebM Matroska-based open media format</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioWebm">
+            <summary>WebM open media format</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioXMsWax">
+            <summary>Windows Media Audio Redirector; Documented in Microsoft help page</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.AudioXMsWma">
+            <summary>Windows Media Audio; Documented in Microsoft KB 288102</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.VideoXMsWmv">
+            <summary>Windows Media Video; Documented in Microsoft KB 288102</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ModelVrml">
+            <summary>WRL files, VRML files; Defined in RFC 2077</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ModelX3DXml">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3D XML files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ModelX3DBinary">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3DB binary files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ModelX3DVrml">
+            <summary>X3D ISO standard for representing 3D computer graphics, X3DV VRML files</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationXhtmlXml">
+            <summary>XHTML; Defined by RFC 3236</summary>
+        </member>
+        <member name="F:Mofleet.Net.MimeTypes.MimeTypeNames.ApplicationZip">
+            <summary>ZIP archive files; Registered[7]</summary>
+        </member>
+        <member name="M:Mofleet.NotificationService.INotificationService.NotifyUsersAsync(Mofleet.NotificationService.TypedMessageNotificationData,System.Int64[],System.Boolean,System.Boolean)">
+            <summary>
+            Notify users about notification data
+            </summary>
+        </member>
+        <member name="T:Mofleet.NotificationService.NotificationService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mofleet.NotificationService.NotificationService.Logger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.NotificationService.NotificationService.#ctor(Abp.Notifications.INotificationPublisher,Abp.Configuration.ISettingManager,Abp.Runtime.Session.IAbpSession,Microsoft.Extensions.Configuration.IConfiguration,Abp.Localization.ILocalizationManager,Mofleet.Authorization.Users.UserManager,Abp.Domain.Uow.IUnitOfWorkManager,Mofleet.EmailSender.IEmailSenderAppService)">
+            <summary>
+            NotificationService
+            </summary>
+            <param name="notificationPublisher"></param>
+            <param name="settingManager"></param>
+            <param name="session"></param>
+            <param name="configuration"></param>
+            <param name="localizationManager"></param>
+            <param name="userManager"></param>
+            <param name="unitOfWorkManager"></param>
+        </member>
+        <member name="M:Mofleet.NotificationService.NotificationService.NotifyUsersAsync(Mofleet.NotificationService.TypedMessageNotificationData,System.Int64[],System.Boolean,System.Boolean)">
+            <summary>
+            Notify Users
+            </summary>
+            <param name="data"></param>
+            <param name="userIds"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Mofleet.Notifications.Dto.NotificationDto.State">
+            <summary>
+            State: 0- Unread, 1- Read
+            </summary>
+        </member>
+        <member name="P:Mofleet.Notifications.Dto.PagedNotificationResultRequestDto.State">
+            <summary>
+            State: 0- Unread, 1- Read
+            </summary>
+        </member>
+        <member name="P:Mofleet.Notifications.Dto.TestNotificationInputDto.Type">
+            <summary>
+            Type of Notification:
+            1 - 10
+            </summary>
+        </member>
+        <member name="M:Mofleet.Notifications.NotificationAppService.#ctor(Mofleet.NotificationService.INotificationService,Abp.Notifications.IUserNotificationManager,Abp.Runtime.Session.IAbpSession,Abp.Localization.ILocalizationManager,Mofleet.Authorization.Users.UserManager,Abp.Domain.Uow.IUnitOfWorkManager)">
+            <summary>
+            Notification AppService
+            </summary>
+            <param name="notificationsService"></param>
+            <param name="userNotificationManager"></param>
+            <param name="session"></param>
+            <param name="userManager"></param>
+            <param name="unitOfWorkManager"></param>
+        </member>
+        <member name="M:Mofleet.Notifications.NotificationAppService.SynchronizeAuthIdWithLocalId(System.Int64)">
+            <summary>
+            Synchronize AuthId With LocalId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Notifications.NotificationAppService.GetUserNotificationsAsync(Mofleet.Notifications.Dto.PagedNotificationResultRequestDto)">
+            <summary>
+            Get User Notification Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Notifications.NotificationAppService.GetNumberOfUnReadUserNotificationsAsync">
+            <summary>
+            Get The Number Of Un Read User Notification
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Notifications.NotificationAppService.MarkNotificationAsReadAsync(Abp.Application.Services.Dto.EntityDto{System.Guid})">
+            <summary>
+            Make Notification As Read
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Notifications.NotificationAppService.TestNotifyUsersAsync(Mofleet.Notifications.Dto.TestNotificationInputDto)">
+            <summary>
+            Test Notify Users
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mofleet.Partners.PartnerAppService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mofleet.Partners.PartnerAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Partners.Partner},Mofleet.Domain.Partners.Dto.PagedPartnerResultRequestDto)">
+            <summary>
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Points.PointAppService.UpdateAsync(Mofleet.Points.Dto.UpdatePointDto)">
+            <summary>
+            Update Point Details
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Points.PointAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete A Point 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Points.PointAppService.CreateFilteredQuery(Mofleet.Points.Dto.PagedPointResultRequestDto)">
+            <summary>
+            Filter for  A Group of Point
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Points.PointAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.Points.Point},Mofleet.Points.Dto.PagedPointResultRequestDto)">
+            <summary>
+            Sort Filtered Cities
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Points.PointAppService.SwitchActivationAsync(Mofleet.Domain.Cities.Dto.SwitchActivationInputDto)">
+            <summary>
+            Switch Activation of A Point
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.PushNotifications.PushNotificationAppService.#ctor(Abp.Domain.Repositories.IRepository{Mofleet.Domain.PushNotifications.PushNotification},Mofleet.NotificationService.INotificationService,Mofleet.Authorization.Users.UserManager,Mofleet.Domain.PushNotifications.IPushNotificationManager,Abp.Localization.ILocalizationManager,Abp.Configuration.ISettingManager,Abp.Runtime.Session.IAbpSession,AutoMapper.IMapper)">
+            <summary>
+             PushNotification AppService
+            </summary>
+        </member>
+        <member name="M:Mofleet.PushNotifications.PushNotificationAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.PushNotifications.PushNotification},Mofleet.PushNotifications.Dto.PagedPushNotificationResultRequestDto)">
+            <summary>
+            Sorting Filtered Posts
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.RejectReasons.RejectReasonAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Get Reject Reason ByID
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.RejectReasons.RejectReasonAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.RejectReasons.RejectReason},Mofleet.Domain.RejectReasons.Dto.PagedRejectReasonResultRequestDto)">
+            <summary>
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.RejectReasons.RejectReasonAppService.SwitchActivationAsync(Mofleet.Domain.Cities.Dto.SwitchActivationInputDto)">
+            <summary>
+            Switch Activation of A RejectReason
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.RejectReasons.RejectReasonAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete A RejectReason
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.RequestForQuotations.RequestForQuotationAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int64})">
+            <summary>
+            Try To Push
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Roles.RoleAppService.GetAllAsync(Mofleet.Roles.Dto.PagedRoleResultRequestDto)">
+            <summary>
+            kjhfholj
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Roles.RoleAppService.GetRolesAsync(Mofleet.Roles.Dto.GetRolesInput)">
+            <summary>
+            kkkkkkss
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.SourceTypes.SourceTypeAppService.GetAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.SourceTypes.SourceTypeAppService.GetAllAsync(Mofleet.Domain.SourceTypes.Dto.PagedSourceTypeResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.SourceTypes.SourceTypeAppService.CreateAsync(Mofleet.Domain.SourceTypes.Dto.CreateSourceTypeDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.SourceTypes.SourceTypeAppService.UpdateAsync(Mofleet.Domain.SourceTypes.Dto.UpdateSourceTypeDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.SourceTypes.SourceTypeAppService.DeleteAsync(Abp.Application.Services.Dto.EntityDto{System.Int32})">
+            <summary>
+            Delete Source Type By ID
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.SourceTypes.SourceTypeAppService.CreateFilteredQuery(Mofleet.Domain.SourceTypes.Dto.PagedSourceTypeResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.SourceTypes.SourceTypeAppService.ApplySorting(System.Linq.IQueryable{Mofleet.Domain.SourceTypes.SourceType},Mofleet.Domain.SourceTypes.Dto.PagedSourceTypeResultRequestDto)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Mofleet.Users.Dto.PagedUserResultRequestDto.UserType">
+            <summary>
+            Admin = 1,
+            BasicUser = 2,
+            CompanyUser = 3,
+            CustomerService = 4
+            </summary>
+        </member>
+        <member name="M:Mofleet.Users.UserAppService.GetCurrentFcmTokenAsync">
+            <summary>
+            Get FCM Token for current user, if exists
+            </summary>
+        </member>
+        <member name="M:Mofleet.Users.UserAppService.SetCurrentFcmTokenAsync(System.String)">
+            <summary>
+            Set or clear FCM Token for current user
+            </summary>
+        </member>
+    </members>
+</doc>

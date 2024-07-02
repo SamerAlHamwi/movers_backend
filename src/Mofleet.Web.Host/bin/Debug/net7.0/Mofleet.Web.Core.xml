@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mofleet.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="M:Mofleet.Controllers.TokenAuthController.CreateJwtClaims(System.Security.Claims.ClaimsIdentity)">
+            <summary>
+            
+            </summary>
+            <param name="identity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mofleet.Controllers.TokenAuthController.CreateAccountAfterSignUpAsync(Mofleet.Models.TokenAuth.VerifySignUpByPhoneNumberInput)">
+            <summary>
+            Create account after signup 
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Controllers.TokenAuthController.VerifySignInWithPhoneNumberAsync(Mofleet.Models.TokenAuth.VerifyLoginByPhoneNumberInput)">
+             <summary>
+            this end point verify PhoneNumber For Company Branch User Or Verify PhoneNumber To Update Password
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+             <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Controllers.TokenAuthController.VerifyUserToSetNewPassword(Mofleet.Models.TokenAuth.VerifyResetPasswordForUserInputDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Controllers.TokenAuthController.VerifyUserToSetNewPasswordByEmail(Mofleet.Models.TokenAuth.VerifyResetPasswordForUserUsingEmailInputDto)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+            <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+        <member name="M:Mofleet.Controllers.TokenAuthController.VerifyChangePhoneNumberAsync(Mofleet.Models.TokenAuth.VerifyChangePhoneNumberInput)">
+             <summary>
+            (mobile) Insert New PhoneNumber And New Dialcode With ConfirmCode To Change PhoneNumber
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+             <exception cref="T:Abp.UI.UserFriendlyException"></exception>
+        </member>
+    </members>
+</doc>
