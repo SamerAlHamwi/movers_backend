@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.csproj",
+      "use": "@vercel/dotnet"
+    },
+    {
+      "src": "wwwroot/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.cs"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/wwwroot/$1"
+    }
+  ]
+}

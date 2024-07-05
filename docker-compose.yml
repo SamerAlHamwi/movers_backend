@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  mofleet_backend:
+    image: registry.dev.itland-sy.com/movers_backend:movers_backend
+    volumes:
+      - type: bind
+        source: /home/server_user/docker/mofleet-attachments
+        target: /app/wwwroot/Uploads/Attachments
+      - type: bind
+        source: /home/server_user/docker/mofleet-low-resluation-attachments
+        target: /app/wwwroot/Uploads/LowResolutionPhotos
+      - type: bind
+        source: /home/server_user/docker/mofleet-Apks
+        target: /app/wwwroot/Uploads/Apks
+    ports:
+      - 7935:44311
