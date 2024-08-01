@@ -132,8 +132,8 @@ namespace Mofleet.Web.Host.Startup
                 options.SwaggerDoc(_apiVersion, new OpenApiInfo
                 {
                     Version = _apiVersion,
-                    Title = "Mofleet API",
-                    Description = "Mofleet",
+                    Title = "Movers API",
+                    Description = "Movers",
                     // uncomment if needed TermsOfService = new Uri("https://example.com/terms"),
                     Contact = new OpenApiContact
                     {
